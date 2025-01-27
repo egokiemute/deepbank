@@ -1,0 +1,113 @@
+# POST: Create a new space
+POST /api/host/space
+Content-Type: application/json
+{
+  "name": "Sample Space"
+}
+
+### Response
+Status: 201 Created
+{
+  "_id": "61c5bdb2b4c4e7d0628f1e9f",
+  "name": "Sample Space",
+  "createdBy": "67861a7ecabc687bdebca6ab",
+  "createdAt": "2025-01-14T12:34:56.789Z",
+  "updatedAt": "2025-01-14T12:34:56.789Z"
+}
+
+### Error Responses
+- Status: 400 Bad Request
+{
+  "error": "Name is required"
+}
+
+- Status: 401 Unauthorized
+{
+  "error": "Unauthorized - No session found"
+}
+
+# PATCH: Update a space by ID or slug
+PATCH /api/host/space
+Content-Type: application/json
+{
+  "id": "61c5bdb2b4c4e7d0628f1e9f",
+  "slug": "sample-space",
+  "name": "Updated Space Name"
+  //add other fields
+}
+
+### Response
+Status: 200 OK
+{
+  "_id": "61c5bdb2b4c4e7d0628f1e9f",
+  "name": "Updated Space Name",
+  "createdBy": "67861a7ecabc687bdebca6ab",
+  "createdAt": "2025-01-14T12:34:56.789Z",
+  "updatedAt": "2025-01-14T12:45:00.000Z"
+}
+
+### Error Responses
+- Status: 400 Bad Request
+{
+  "error": "ID or slug is required"
+}
+
+- Status: 404 Not Found
+{
+  "error": "Space not found"
+}
+
+# GET: Get a space by slug or ID, or all spaces if no slug is provided
+# this is for fetching only SPACES FOR A PARTICULAR HOST
+GET /api/host/space?limit=<number of space to fetch at a time>&page=<page per data>
+GET /api/host/space?slug=<spaceSlug>
+
+### Response
+Status: 200 OK
+{
+  "_id": "61c5bdb2b4c4e7d0628f1e9f",
+  "name": "Sample Space",
+  "createdBy": "67861a7ecabc687bdebca6ab",
+  "createdAt": "2025-01-14T12:34:56.789Z",
+  "updatedAt": "2025-01-14T12:34:56.789Z"
+}
+
+### Error Responses
+- Status: 404 Not Found
+{
+  "error": "Space not found"
+}
+
+- Status: 401 Unauthorized
+{
+  "error": "Unauthorized - No session found"
+}
+
+# DELETE: Delete a space by ID or slug
+DELETE /api/host/space
+Content-Type: application/json
+{
+  "id": "61c5bdb2b4c4e7d0628f1e9f"
+}
+
+### Response
+Status: 200 OK
+{
+  "message": "Space deleted successfully"
+}
+
+### Error Responses
+- Status: 400 Bad Request
+{
+  "error": "ID or slug is required"
+}
+
+- Status: 404 Not Found
+{
+  "error": "Space not found"
+}
+
+- Status: 401 Unauthorized
+{
+  "error": "Unauthorized - No session found"
+}

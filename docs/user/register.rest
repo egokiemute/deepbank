@@ -1,0 +1,32 @@
+### User Registration API
+
+POST /api/auth/register
+Content-Type: application/json
+
+{
+  "email": "john@gmail.com",
+  "password": "SecurePassword123",
+}
+
+
+
+### Success Response
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "message": "User registered successfully",
+  "user": {
+    "email": "john@gmail.com",
+    "password": "$2a$12$aJmV3J3vpsZJ6F3OZLfSxel.EnC1bBTS.ZmnWL1gS6yClU30FuiFi",
+    "isNinVerified": false,
+    "isVerified": false,
+    "profilePicture": "default.jpg",
+    "reservations": [],
+    "_id": "678456a69b2530715e733a3a",
+    "lastLogin": "2025-01-12T23:56:22.419Z",
+    "createdAt": "2025-01-12T23:56:22.419Z",
+    "updatedAt": "2025-01-12T23:56:22.419Z",
+    "__v": 0
+  }
+}

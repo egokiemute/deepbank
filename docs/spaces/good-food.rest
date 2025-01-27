@@ -1,0 +1,93 @@
+{
+  "id": "6790e897be1a54cc4936799b",
+  "description": "A flexible workspace for creatives searching for a friendly place to work.",
+  "city": "Warri",
+  "state": "Delta",
+  "street": "44 Okumagba Ave, opp. FCMB Bank, Estate, Warri.",
+  "capacity": 12,
+  "amenities": ["wifi", "fans", "smart tv", "kitchen"],
+  "price": 2000,
+  "discount": 0,
+  "duration": {
+    "daily": {
+      "price": 2000,
+      "description": "Daily plan",
+      "days": 1
+    },
+    "weekly": {
+      "price": 10000,
+      "description": "Weekly plan",
+      "days": 6
+    },
+    "monthly": {
+      "price": 20000,
+      "description": "Monthly plan",
+      "days": 24
+    }
+  },
+  "images": [
+    {
+      "url": "https://res.cloudinary.com/kodenigga/image/upload/v1737568886/usetabos/southcircle/2024-10-14_1_wzkmwo.jpg"
+    },
+    {
+      "url": "https://res.cloudinary.com/kodenigga/image/upload/v1737568886/usetabos/southcircle/WhatsApp_Image_2025-01-22_at_15.30.48_256a1267_ukaklj.jpg"
+    },
+    {
+      "url": "https://res.cloudinary.com/kodenigga/image/upload/v1737568886/usetabos/southcircle/2024-07-16_le4bxw.jpg"
+    },
+    {
+      "url": "https://res.cloudinary.com/kodenigga/image/upload/v1737568887/usetabos/southcircle/WhatsApp_Image_2025-01-22_at_15.30.49_9b570f53_inanmq.jpg"
+    },
+    {
+      "url": "https://res.cloudinary.com/kodenigga/image/upload/v1737568887/usetabos/southcircle/WhatsApp_Image_2025-01-22_at_15.30.47_c3c9d2d8_w8tqmr.jpg"
+    }
+  ],
+  "status": "active",
+  "views": 8,
+  "category": "Co-working",
+  "subCategory": ["Technology", "Innovation"],
+  "operatingHours": [
+    {
+      "day": "Monday",
+      "open": "08:00 AM",
+      "close": "06:00 PM",
+      "status": "Open"
+    },
+    {
+      "day": "Tuesday",
+      "open": "08:00 AM",
+      "close": "06:00 PM",
+      "status": "Open"
+    },
+    {
+      "day": "Wednesday",
+      "open": "08:00 AM",
+      "close": "06:00 PM",
+      "status": "Open"
+    },
+    {
+      "day": "Thursday",
+      "open": "08:00 AM",
+      "close": "06:00 PM",
+      "status": "Open"
+    },
+    {
+      "day": "Friday",
+      "open": "08:00 AM",
+      "close": "06:00 PM",
+      "status": "Open"
+    },
+    {
+      "day": "Saturday",
+      "open": "10:00 AM",
+      "close": "04:00 PM",
+      "status": "Open"
+    },
+    {
+      "day": "Sunday",
+      "open": "Closed",
+      "close": "Closed",
+      "status": "Closed"
+    }
+  ]
+}

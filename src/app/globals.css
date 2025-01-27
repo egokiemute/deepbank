@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  * {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: transparent;
+  }
+  * > * {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: transparent;
+  }
+
+  html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+    @apply font-aeonik text-text-weak;
+  }
+
+  section,
+  header {
+    @apply px-4 xs:px-8;
+  }
+
+  h2 {
+    @apply text-heading-sm font-bold leading-9 text-text-strong xs:text-heading-lg xs:leading-[44px];
+  }
+  h3 {
+    @apply text-title-lg font-bold leading-9;
+  }
+
+  h4 {
+    @apply text-title-md xs:text-title-lg;
+  }
+  h5 {
+    @apply text-heading-lg font-bold leading-9;
+  }
+  p {
+    @apply text-paragraph-lg;
+  }
+}
+
+@layer components {
+  .hide-scroll::-webkit-scrollbar {
+    display: none;
+    scrollbar-width: none;
+  }
+
+  .hero-bg {
+    background-image: url("/images/hero-bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  .listing-hero-bg {
+    background-image: url("/images/listing-hero-bg.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  .container {
+    @apply mx-auto max-w-[1200px];
+  }
+
+  .input-class {
+    @apply h-12 w-full rounded-lg border-[#000000] bg-[#0000000F] px-4 py-3 text-[#000000E5] hover:border focus:border-[3px] focus:bg-white focus:outline-none;
+  }
+  .select-class {
+    @apply h-12 w-full appearance-none rounded-lg border-[#000000] bg-[#0000000F] px-4 py-3 text-[#000000E5] hover:border focus:border-[3px] focus:bg-white focus:outline-none;
+
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%2300000066' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='lucide lucide-chevron-down'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+  }
+  .label-class {
+    @apply text-title-md font-bold text-text-strong;
+  }
+}
+
+/* .container-sm {
+  margin: 0 auto;
+  max-width: 1200px;
+} */

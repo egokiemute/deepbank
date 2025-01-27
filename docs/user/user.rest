@@ -1,0 +1,133 @@
+### Update User API
+
+PATCH /api/user/
+Content-Type: application/json
+
+{
+  "email": "john@gmail.com", //only the email is required to identify the user
+  "firstname": "John",
+  "lastname": "Doe",
+  "phone": "1234567890"
+  //Any other field to update, 
+}
+
+### Success Response
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "message": "User updated successfully",
+  "user": {
+    "firstname": "John",
+    "lastname": "Doe",
+    "email": "john@gmail.com",
+    "password": "$2a$12$hashedpassword",
+    "phone": "1234567890",
+    "google": false,
+    "nin": "123456789",
+    "isNinVerified": true,
+    "skillSet": "Developer",
+    "isVerified": true,
+    "profilePicture": "profile.jpg",
+    "bio": "Software Developer",
+    "reservations": [],
+    "role": "user",
+    "createdAt": "2025-01-12T23:56:22.419Z",
+    "updatedAt": "2025-01-13T10:00:00.000Z"
+  }
+}
+
+### Error Responses
+
+#### Missing Email
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+
+{
+  "error": "Email is required"
+}
+
+#### User Not Found
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+
+{
+  "error": "User not found"
+}
+
+#### Internal Server Error
+HTTP/1.1 500 Internal Server Error
+Content-Type: application/json
+
+{
+  "error": "An unknown error occurred"
+}
+
+
+
+
+
+
+
+
+
+
+
+Get User API
+GET /api/auth/user?email=john@gmail.com
+Content-Type: application/json
+
+Query Parameters
+email: The email address of the user to retrieve. (Required)
+Success Response
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "email": "john@gmail.com",
+  "password": "$2a$12$aJmV3J3vpsZJ6F3OZLfSxel.EnC1bBTS.ZmnWL1gS6yClU30FuiFi",
+  "isNinVerified": false,
+  "isVerified": false,
+  "profilePicture": "default.jpg",
+  "reservations": [],
+  "_id": "678456a69b2530715e733a3a",
+  "lastLogin": "2025-01-12T23:56:22.419Z",
+  "createdAt": "2025-01-12T23:56:22.419Z",
+  "updatedAt": "2025-01-12T23:56:22.419Z",
+  "__v": 0
+}
+
+Error Response
+Email Query Parameter Missing
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+
+json
+Copy code
+{
+  "error": "Email query parameter is required"
+}
+User Not Found
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+
+json
+Copy code
+{
+  "error": "User not found"
+}
+Internal Server Error
+HTTP/1.1 500 Internal Server Error
+Content-Type: application/json
+
+json
+Copy code
+{
+  "error": "An unknown error occurred"
+}
+
+
+
+
+
+

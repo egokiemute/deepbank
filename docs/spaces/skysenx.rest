@@ -1,0 +1,93 @@
+{
+  "id": "6790e27fbe1a54cc49367967",
+  "description": "A modern workspace with state-of-the-art amenities for tech professionals and startups in Warri, Delta State.",
+  "city": "Warri",
+  "state": "Delta",
+  "street": "The Mansion, Mosheshe Estate, Airport Road, Effurun.",
+  "capacity": 12,
+  "amenities": ["wifi", "ac", "projector", "cafe", "parking"],
+  "price": 2000,
+  "discount": 0,
+  "duration": {
+    "daily": {
+      "price": 2000,
+      "description": "Daily plan",
+      "days": 1
+    },
+    "weekly": {
+      "price": 9000,
+      "description": "Weekly plan",
+      "days": 6
+    },
+    "monthly": {
+      "price": 28000,
+      "description": "Monthly rental plan",
+      "days": 24
+    }
+  },
+  "images": [
+    {
+      "url": "https://res.cloudinary.com/kodenigga/image/upload/v1732361003/usetabos/tabs/ss2_ueq6l1.jpg"
+    },
+    {
+      "url": "https://res.cloudinary.com/kodenigga/image/upload/v1732361004/usetabos/tabs/ss1_uv0t1i.jpg"
+    },
+    {
+      "url": "https://res.cloudinary.com/kodenigga/image/upload/v1732361008/usetabos/tabs/ss_m9cmwa.jpg"
+    },
+    {
+      "url": "https://res.cloudinary.com/kodenigga/image/upload/v1732361013/usetabos/tabs/ss4_gmkrlb.jpg"
+    },
+    {
+      "url": "https://res.cloudinary.com/kodenigga/image/upload/v1732361003/usetabos/tabs/ss5_tzzjjz.jpg"
+    }
+  ],
+  "status": "active",
+  "views": 32,
+  "category": "Co-working",
+  "subCategory": ["Technology", "Innovation"],
+  "operatingHours": [
+    {
+      "day": "Monday",
+      "open": "08:00 AM",
+      "close": "06:00 PM",
+      "status": "Open"
+    },
+    {
+      "day": "Tuesday",
+      "open": "08:00 AM",
+      "close": "06:00 PM",
+      "status": "Open"
+    },
+    {
+      "day": "Wednesday",
+      "open": "08:00 AM",
+      "close": "06:00 PM",
+      "status": "Open"
+    },
+    {
+      "day": "Thursday",
+      "open": "08:00 AM",
+      "close": "06:00 PM",
+      "status": "Open"
+    },
+    {
+      "day": "Friday",
+      "open": "08:00 AM",
+      "close": "06:00 PM",
+      "status": "Open"
+    },
+    {
+      "day": "Saturday",
+      "open": "10:00 AM",
+      "close": "04:00 PM",
+      "status": "Open"
+    },
+    {
+      "day": "Sunday",
+      "open": "Closed",
+      "close": "Closed",
+      "status": "Closed"
+    }
+  ]
+}

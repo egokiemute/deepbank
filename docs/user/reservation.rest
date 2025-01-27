@@ -1,0 +1,32 @@
+### Create Reservation
+POST /api/user/reservations
+Content-Type: application/json
+
+{
+  "user": "601c1f7f1c4e4a2f8432b7e2",       // Replace with a valid User ID
+  "space": "601c1f8a1c4e4a2f8432b7e3",      // Replace with a valid Space ID
+  "startDate": "2025-01-20T10:00:00.000Z",  // Replace with desired start date
+  "endDate": "2025-01-22T10:00:00.000Z",    // Replace with desired end date
+  "duration": "2 days",                     // Specify the duration
+  "guests": 2,                              // Number of guests
+  "amount": 200,                            // Total amount for the reservation
+  "status": "awaiting payment"              // Initial status (optional, defaults to "awaiting payment")
+}
+
+### Update Reservation
+PATCH /api/user/reservations
+Content-Type: application/json
+
+{
+  "id": "601c1f9b1c4e4a2f8432b7e4",         // Replace with a valid Reservation ID
+  "startDate": "2025-01-21T10:00:00.000Z",  // Updated start date
+  "endDate": "2025-01-23T10:00:00.000Z",    // Updated end date
+  "guests": 3,                              // Updated number of guests
+  "amount": 250                              // Updated amount for the reservation
+}
+
+### Fetch Reservations
+GET /api/user/reservations?page=1&limit=10
+
+### Delete Reservation
+DELETE /api/user/reservations?id=601c1f9b1c4e4a2f8432b7e4   // Replace with valid Reservation ID
