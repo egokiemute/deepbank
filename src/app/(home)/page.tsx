@@ -18,7 +18,7 @@ export default function Home() {
       <Hero />
       <Building />
       <Differences />
-      <Cities />
+      {/* <Cities /> */}
       <HowItWorks />
       <Faq theme="blue" />
       <FlexEnabler />

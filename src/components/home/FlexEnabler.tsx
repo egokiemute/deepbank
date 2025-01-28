@@ -16,11 +16,11 @@ const FlexEnabler = () => {
         <div className="flex flex-col items-center">
           <BlueSubTitle text="Your experience" />
           <h2 className="mt-4 text-center text-heading-sm font-bold text-text-strong xs:text-heading-lg">
-            Become a FlexEnabler!
+            Become a FinFlower!
           </h2>
 
           <p className="mx-auto mb-7 mt-4 max-w-xl text-center leading-[28px]">
-            Be part of the change you want to see! Join as a FlexEnabler, help
+            Be part of the change you want to see! Join as a FinFlower, help
             connect people to flexible workspaces as a Host or Community Member
             and stand a chance to get Membership perks.
           </p>

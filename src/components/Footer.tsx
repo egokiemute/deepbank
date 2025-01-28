@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="container">
           <div className="flex flex-col sm:flex-row sm:gap-24">
             <div className="mb-8 flex">
-              <Logo type="white" />
+              {/* <Logo type="white" /> */}
             </div>
             <div className="grid w-full grid-cols-2 gap-x-5 gap-y-10 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6">
               <div className="w-full">

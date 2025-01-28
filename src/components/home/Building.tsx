@@ -6,13 +6,13 @@ export default function Building() {
     <section>
       <div className="container py-8 sm:py-[90px]">
         <div>
-          <SubTitle text="Building flextable" theme="blue" />
+          <SubTitle text="Why Flinflow" theme="blue" />
 
           <div className="mt-4">
             <p className="text-heading-sm font-bold leading-9 text-text-strong sm:text-display-lg sm:leading-[64px]">
-              Search, Book, and Manage workspaces in Minutes.{" "}
+            Super convenient banking for everyone.{" "}
               <span className="text-text-weak">
-                Frankly, finding the right space should never slow you down.
+                And, using the right bank that would never slow you down.
               </span>
             </p>
           </div>

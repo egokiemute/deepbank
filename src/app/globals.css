@@ -59,10 +59,11 @@
   }
 
   .hero-bg {
-    background-image: url("/images/hero-bg.png");
+    background-image: url("/images/hero-bg.webp");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom;
+    margin-top: 40px;
   }
   .listing-hero-bg {
     background-image: url("/images/listing-hero-bg.svg");

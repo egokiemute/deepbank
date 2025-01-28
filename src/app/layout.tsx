@@ -34,16 +34,16 @@ const aeonik = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://flextable.co"),
+  metadataBase: new URL("https://finflow.co"),
   keywords: ["flextable", "co-work space", "event hall", "restaurants", "spaces", "coworking", "remote work", "flexible workspaces"],
   title: {
-    template: `%s | Flextable.co`,
-    default: "Flextable.co",
+    template: `%s | Finflow.co`,
+    default: "Finflow.co",
   },
-  description: "Wherever work takes you, we'll find the space.",
+  description: "Banking for everyone.",
   openGraph: {
     title: "Flextable.co",
-    description: "Wherever work takes you, we'll find the space.",
+    description: "Banking for everyone.",
     images: [
       {
         url: "/images/thumbnail.webp",

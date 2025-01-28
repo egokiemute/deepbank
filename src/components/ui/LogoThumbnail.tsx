@@ -13,8 +13,8 @@ const LogoThumbnail: FC<LogoProps> = ({ type }) => {
         <Image
           src={
             type === 'black'
-              ? '/images/logo-thumbnail.svg'
-              : '/images/logo-white.svg'
+              ? '/images/logo-black.webp'
+              : '/images/logo-black.webp'
           }
           height={200}
           width={200}

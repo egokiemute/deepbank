@@ -30,10 +30,10 @@ export default function Layout({
           <div className="h-full">
             <Image
               className="h-full object-cover transition"
-              src="/images/sign-up-Image.svg"
+              src="/images/sign-in-image.png"
               alt="Image"
               height={1000}
-              width={1000}
+              width={800}
             />
           </div>
         ) : (
@@ -42,7 +42,7 @@ export default function Layout({
               style={{
                 backgroundImage: `
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('/images/sign-in-Image.svg')
+    url('/images/sign-up-image.png')
   `,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
@@ -52,15 +52,15 @@ export default function Layout({
             >
               <div className="mx-auto flex h-full max-w-5xl flex-col justify-end text-text-strongInverse">
                 <p className="text-heading-sm 2xl:text-heading-lg">
-                  “We&apos;ve been using Flextable for about 2 years and I must
+                  “I&apos;ve been using FinFlow for about 2 years and I must
                   say that It&apos;s been an incredible journey. We&apos;ve had
                   a significant increase in revenue, and I can&apos;t imagine
                   the coming years without it.”
                 </p>
                 <div className="mt-8 flex items-center justify-between">
                   <div>
-                    <h3>Thename Unknown</h3>
-                    <p>Founder, SkysenxHub</p>
+                    <h3>Scott Michael</h3>
+                    <p>Founder, Drecktail</p>
                   </div>
                   <div className="flex gap-4 xl:gap-8">
                     <div className="flex h-14 w-14 items-center justify-center rounded-full border-2 border-stroke-strongInverse">

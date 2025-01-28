@@ -1,15 +1,15 @@
 export const navLinks = [
   {
-    title: "List a space",
+    title: "Home",
     router: "/listing",
   },
   {
-    title: "Spaces",
+    title: "Features",
     router: "/spaces",
   },
   {
-    title: "Community",
-    router: "/#FlexEnablers",
+    title: "Testimonials",
+    router: "/spaces",
   },
 ];
 export const navUserAuthLinks = [
@@ -37,35 +37,40 @@ export const navUserAuthLinks = [
 
 export const differences = [
   {
-    title: "Flexibility",
-    text: "Work your way, choose when, where, and how you work.",
+    title: "Checkings account",
+    text: "Checking accounts that work for you, not against you.",
     icon: "Infinity",
   },
   {
-    title: "Proximity",
-    text: "Stay close to clients, teams, and opportunities wherever you are.",
-    icon: "MapPin",
+    title: "Savings account",
+    text: "Secure your future with a savings account that works for you.",
+    icon: "House",
   },
   {
-    title: "Accessibility",
-    text: "Easy access to spaces in key locations no time wasted.",
+    title: "Low interest loans",
+    text: "Loan options that work for you, not against you.",
     icon: "Search",
+  },
+  {
+    title: "Flexible credit cards",
+    text: "Get access to credit cards that work for you.",
+    icon: "CreditCard",
   },
 ];
 
 export const howItWorks = [
   {
-    title: "Search for Spaces",
+    title: "Create an account",
     text: "Explore our wide range of Spaces and find the one that fits your needs.",
     image: "/images/how1.svg",
   },
   {
-    title: "Book a Space",
+    title: "Fund your account",
     text: "Secure your spot in a few simple steps, just select, confirm, and you’re all set.",
     image: "/images/how2.svg",
   },
   {
-    title: "Manage your Space",
+    title: "Manage your investments",
     text: "Take charge of your bookings, easily renew your Subscription, drop your reviews and Flex.",
     image: "/images/how3.svg",
   },

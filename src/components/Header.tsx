@@ -99,7 +99,7 @@ const Header = () => {
           className={` ${isNavOpen ? "translate-x-0 duration-150" : "duration-150 max-lg:translate-x-[200%]"} fixed bottom-0 left-0 right-0 top-0 z-30 bg-fill-weakInverse backdrop-blur-[2px] lg:hidden`}
         ></div>
         <div
-          className={` ${!isNavOpen && "backdrop-blur-sm"} container flex h-full items-center justify-between rounded-[1000px] bg-fill-weak px-4 py-3 lg:px-8 lg:py-5`}
+          className={` ${!isNavOpen && "backdrop-blur-sm"} px-4 flex h-full items-center justify-between w-full bg-fill-weak  py-3 lg:py-5`}
         >
           <Logo type="black" />
           <nav

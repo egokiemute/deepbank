@@ -13,7 +13,7 @@ const Logo: FC<LogoProps> = ({ type }) => {
         <Image
           src={
             type === 'black'
-              ? '/images/logo-black.svg'
+              ? '/images/logo-black.webp'
               : '/images/logo-white.svg'
           }
           height={200}
